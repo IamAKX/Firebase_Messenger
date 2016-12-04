@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_private_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.akash.applications.firebasemessenger.PrivateChat">
+
+    <ListView
+        android:id="@+id/privatechat_chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp"
+        >
+    </ListView>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/emoticon"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/privatechat_emoticon"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"/>
+        <ImageView
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/sendicon"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/privatechat_send"/>
+        <EditText
+            android:id="@+id/privatechat_input_message"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Type message"
+            android:padding="5dp"
+            android:background="@drawable/customborder"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/privatechat_send"
+            android:layout_toRightOf="@+id/privatechat_emoticon"/>
+
+</RelativeLayout>

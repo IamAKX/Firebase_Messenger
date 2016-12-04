@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_create_broadcast"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.akash.applications.firebasemessenger.CreateBroadcast">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newbroadcast_sendingTo"
+        android:text="Sending broadcst message to :"
+        android:textStyle="bold|italic"
+        android:textSize="15sp"
+        android:layout_marginBottom="15dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/newbroadcast_sendingTo"
+        android:layout_above="@+id/newbroadcast_send"
+        android:layout_marginBottom="15dp"
+        android:scrollbars="vertical"
+        android:id="@+id/newbroadcast_recyclerview">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/emoticon"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/newbroadcast_emoticon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+    <ImageView
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/sendicon"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/newbroadcast_send"/>
+    <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/newbroadcast_emoticon"
+        android:layout_toLeftOf="@+id/newbroadcast_send"
+        android:hint="Type message here..."
+        android:background="@drawable/customborder"
+        android:id="@+id/newbroadcast_input_message"
+        emojicon:emojiconSize="25dp"/>
+
+</RelativeLayout>

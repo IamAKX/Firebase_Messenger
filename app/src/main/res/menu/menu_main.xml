@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.akash.applications.firebasemessenger.MainActivity">
+    <item
+        android:id="@+id/changedp"
+        android:orderInCategory="100"
+        android:title="Change Profile Picture"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/changestatus"
+        android:orderInCategory="100"
+        android:title="Change Status"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="100"
+        android:title="Share"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="Log out"
+        app:showAsAction="never" />
+
+
+</menu>

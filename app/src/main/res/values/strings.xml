@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Firebase Messenger</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="serverLink">http://akashapplications.hol.es/firebasemessenger/</string>
+    <string name="profileLink">http://akashapplications.hol.es/firebasemessenger/profileimage/</string>
+</resources>

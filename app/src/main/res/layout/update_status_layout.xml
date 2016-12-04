@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="5sp"
+    android:layout_marginTop="20dp"
+    android:id="@+id/updatestatus_layout"
+    android:layout_width="match_parent"
+    android:layout_height="110dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:maxLength="1000"
+        android:gravity="start"
+        android:hint="Type message here..."
+        android:background="@drawable/customborder"
+        android:id="@+id/updatestatus_input_message"
+        />
+</RelativeLayout>
